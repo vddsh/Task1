@@ -111,8 +111,13 @@ h6 {
 }
 .input__info {
   margin: 0px 40px;
-  width: 270px;
+  min-width: 260px;
+  max-width: 260px;
+  width: 260px;
   font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .input__info-count {
   margin: 0px 40px;
@@ -138,10 +143,10 @@ h6 {
 }
 
 .active__wrapper {
-  height: 500px;
+  min-height: 500px;
 }
 .archive__wrapper {
-  height: 500px;
+  min-height: 500px;
 }
 
 /* TABS */
@@ -177,17 +182,15 @@ h6 {
 .modal__wrapper {
   display: flex;
   justify-content: flex-end;
+  margin-left: 83%;
 }
 .modal__btn {
   font-size: 16px;
-  height: 40px;
+  height: 50px;
   width: 120px;
   border: 1px solid grey;
 }
 .modal__btn:hover {
-  font-size: 16px;
-  height: 40px;
-  width: 120px;
   background: white;
   border: 1px solid rgb(92, 92, 92);
 }

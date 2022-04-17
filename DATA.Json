@@ -1,65 +1,65 @@
 [
   {
-    "id": "1649954514190",
-    "name": "sell",
-    "date": "2022-04-16",
+    "id": "1650194618307",
+    "name": "1222",
+    "dates": ["2/7/2021"],
     "category": "TASK",
-    "content": "car",
-    "updated": "2022-04-14T16:41:54.190Z",
+    "content": "Hello 2/7/2021",
+    "updated": "2022-04-17T11:42:23.645Z",
     "archived": false
   },
   {
-    "id": "1649954539498",
-    "name": "find",
-    "date": "2022-04-16",
+    "id": "1650195763927",
+    "name": "Buy ",
+    "dates": "",
+    "category": "TASK",
+    "content": "Car",
+    "updated": "2022-04-17T11:42:43.927Z",
+    "archived": false
+  },
+  {
+    "id": "1650195782718",
+    "name": "Meet Doctor",
+    "dates": "",
+    "category": "RANDOM_THOUGHT",
+    "content": "meet doctor at 7:00",
+    "updated": "2022-04-17T11:43:02.718Z",
+    "archived": false
+  },
+  {
+    "id": "1650195855880",
+    "name": "Meet Jane",
+    "dates": ["2/7/2022"],
+    "category": "RANDOM_THOUGHT",
+    "content": "buy tickets on 2/7/2022",
+    "updated": "2022-04-17T11:44:15.880Z",
+    "archived": false
+  },
+  {
+    "id": "1650195817514",
+    "name": "Go football",
+    "dates": ["3/11/2022"],
+    "category": "RANDOM_THOUGHT",
+    "content": "play football 3/11/2022",
+    "updated": "2022-04-17T11:43:37.514Z",
+    "archived": false
+  },
+  {
+    "id": "1650195882784",
+    "name": "Meet Andy",
+    "dates": "",
     "category": "IDEA",
-    "content": "index",
-    "updated": "2022-04-14T16:42:19.498Z",
+    "content": "at movie",
+    "updated": "2022-04-17T11:44:42.783Z",
     "archived": false
   },
   {
-    "id": "1649954505379",
+    "id": "1650196763830",
     "name": "Buy",
-    "date": "2022-04-17",
-    "category": "TASK",
-    "content": "Water",
-    "updated": "2022-04-14T16:41:45.379Z",
-    "archived": false
-  },
-  {
-    "id": "1649954548086",
-    "name": "do ",
-    "date": "2022-04-17",
-    "category": "TASK",
-    "content": "do",
-    "updated": "2022-04-14T16:42:28.086Z",
-    "archived": false
-  },
-  {
-    "id": "1649954521290",
-    "name": "eat",
-    "date": "2022-04-24",
+    "dates": ["4/5/2022", "6/7/2022"],
     "category": "RANDOM_THOUGHT",
-    "content": "food",
-    "updated": "2022-04-14T16:42:01.290Z",
-    "archived": false
-  },
-  {
-    "id": "1649954529625",
-    "name": "go",
-    "date": "2022-04-24",
-    "category": "RANDOM_THOUGHT",
-    "content": "work",
-    "updated": "2022-04-14T16:42:09.625Z",
-    "archived": false
-  },
-  {
-    "id": "1649954557867",
-    "name": "leave",
-    "date": "2022-04-22",
-    "category": "RANDOM_THOUGHT",
-    "content": "life",
-    "updated": "2022-04-14T16:42:37.867Z",
+    "content": "i'm gonna but some bread on 4/5/2022 6/7/2022",
+    "updated": "2022-04-17T11:59:51.458Z",
     "archived": false
   }
 ]

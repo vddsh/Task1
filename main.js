@@ -1,6 +1,7 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
+const modalSaveBtn = document.getElementById('input__fileds-btn');
+const modalTitle = document.querySelector('#modal .title');
 const addBtn = document.getElementById('input__fileds-btn');
 const nameInout = document.getElementById('input__fileds-name');
 const categoryInput = document.getElementById('input__fileds-category');
@@ -23,7 +24,7 @@ addBtn.addEventListener('click', () => {
     updated: new Date(),
     archived: noteId ? isArchived(noteId) : false,
   });
-  removeModal();
+  closeModal(modal);
 });
 
 function activeBtn() {
@@ -54,12 +55,14 @@ function saveOrUpdateNote(note) {
 function editNote(id) {
   let note = NoteAPI.getNoteById(id);
 
-  addModal();
+  openModal(modal);
   renderEdit(note);
   renderNotes();
 }
 
 function clearInputs() {
+  modalTitle.innerHTML = 'Add Note';
+  modalSaveBtn.innerHTML = 'Save Note';
   nameInout.value = '';
   categoryInput.value = '';
   contentInput.value = '';
@@ -68,6 +71,8 @@ function clearInputs() {
 }
 
 function renderEdit(note) {
+  modalTitle.innerHTML = 'Edit Note';
+  modalSaveBtn.innerHTML = 'Edit Note';
   nameInout.value = note.name;
   categoryInput.value = note.category;
   contentInput.value = note.content;
@@ -140,5 +145,7 @@ function addModal() {
   modal.classList.add('active__overlay');
   overlay.classList.add('active__overlay');
 }
+
+loadData();
 renderAmount();
-// loadData();
+renderNotes();
