@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+    <section class="active">
+      <div class="mytabs">
+          <input type="radio" id="tabactive" name="mytabs" checked="checked" onclick="activeBtn()"/>
+          <label for="tabactive">Active</label>
+          <div class="tab">
+             <table class="input">
+        <tr>
+          <td class="input__info">Name</td>
+          <td class="input__info">Created</td>
+          <td class="input__info">Category</td>
+          <td class="input__info">Content</td>
+          <td class="input__info">Dates</td>
+          <!-- <td class="fa-solid fa-box-open icon" onclick="unArchiveNotes()"></td> -->
+        </tr>
+      </table>  
+            <div class="active__wrapper"></div></div>
+          <input type="radio" id="tabarchive" name="mytabs" onclick="archiveBtn()"/>
+          <label for="tabarchive">Archive</label>
+          <div class="tab">
+             <table class="input">
+        <tr>
+          <td class="input__info">Name</td>
+          <td class="input__info">Created</td>
+          <td class="input__info">Category</td>
+          <td class="input__info">Content</td>
+          <td class="input__info">Dates</td>
+          <!-- <td class="fa-solid fa-box-open icon" onclick="unArchiveNotes()"></td> -->
+        </tr>
+      </table>  
+            <div class="archive__wrapper"></div>
+      </div>
+    </section>
+      <section>
+        <div class="modal" id="modal">
+          <div class="modal__header">
+             <div class="title">Add Note</div>
+             <button data-close-button class="close__button">&times;</button>
+          </div>
+          <div class="modal__body">
+            <div class="input__modal input__color" id="app">
+              <div class="inputs_modal-window">
+              <select class="input__info-modal" id="input__fileds-category">
+                <option value="TASK" category="TASK">Task</option>
+                 <option value="RANDOM_THOUGHT" category="RANDOM_THOUGHT">Random Thought</option>
+                 <option value="IDEA" category="IDEA">Idea</option>
+              </select>
+              </div>
+              <div class="inputs_modal-window">
+               <input
+                class="input__info-modal"
+                placeholder="Name..."
+                id="input__fileds-name"
+               />
+               </div>
+               <div class="inputs_modal-window">
+              <textarea
+                class="input__info-modal"
+                placeholder="Content..."
+                id="input__fileds-content"
+              ></textarea>
+              </div>
+              <div class="inputs_modal-window">
+             <button class="input__info-modal input__info-btn" id="input__fileds-btn">
+               Save Note
+             </button>
+             </div>
+            </div>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div class="modal__wrapper">
+          <button data-modal-target="#modal" class="modal__btn">Add Note</button>
+        </div>
+        </section>
+    <section class="archive">
+        <div class="active__wrapper">
+        <table class="input">
+          <tr>
+            <td class="input__info-count">Note Category</td>
+            <td class="input__info-count">Active</td>
+            <td class="input__info-count">Archive</td>
+          </tr>
+        </table>
+        <table class="table__info">
+          <tr>
+            <td class="input__info-count">Task</td>
+            <td class="input__info-count active__count count" category="TASK" status="active">0</td>
+            <td class="input__info-count archive__count count" category="TASK" status="archive">0</td>
+          </tr>
+        </table>
+        <table class="table__info">
+          <tr>
+            <td class="input__info-count ">Random Througth</td>
+            <td class="input__info-count active__count count" category="RANDOM_THOUGHT" status="active">0</td>
+            <td class="input__info-count archive__count count"  category="RANDOM_THOUGHT" status="archive">0</td>
+          </tr>
+        </table>
+        <table class="table__info">
+          <tr>
+            <td class="input__info-count">Idea</td>
+            <td class="input__info-count active__count count" category="IDEA" status="active">0</td>
+            <td class="input__info-count archive__count count" category="IDEA" status="archive">0</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+      <script src="Render.js"></script>
+      <script src="NoteAPI.js"></script>
+      <script src="main.js"></script>
+  </body>
+</html>
